@@ -1,0 +1,179 @@
+mb5151:SI_2023_lab1_121232 mstojkov$ open README.md
+mb5151:SI_2023_lab1_121232 mstojkov$ touch README.md
+mb5151:SI_2023_lab1_121232 mstojkov$ nano README.md
+mb5151:SI_2023_lab1_121232 mstojkov$ git add .
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Initial commit"
+[master 8d3aec9] Initial commit
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+mb5151:SI_2023_lab1_121232 mstojkov$ touch SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ nano SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Add java class"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+mb5151:SI_2023_lab1_121232 mstojkov$ git push --all origin
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/SI121232/SI_2023_lab1_121232.git/'
+mb5151:SI_2023_lab1_121232 mstojkov$ curl -u "username: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" 
+https://github.com/SI121232/SI_2023_lab1_121232.git
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+mb5151:SI_2023_lab1_121232 mstojkov$ git push
+Username for 'https://github.com': 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
+Password for 'https://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@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SI121232/SI_2023_lab1_121232.git
+   7ada2e4..8d3aec9  master -> master
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Add java class"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+mb5151:SI_2023_lab1_121232 mstojkov$ git push
+Everything up-to-date
+mb5151:SI_2023_lab1_121232 mstojkov$ git push --all origin
+Everything up-to-date
+mb5151:SI_2023_lab1_121232 mstojkov$ touch SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ nano SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout -b bug1
+Switched to a new branch 'bug1'
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout -b bug2
+Switched to a new branch 'bug2'
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout -b bug3
+Switched to a new branch 'bug3'
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout bug1
+Switched to branch 'bug1'
+mb5151:SI_2023_lab1_121232 mstojkov$ touch SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ nano SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m “Fix wrong loop for reading”
+error: pathspec 'wrong' did not match any file(s) known to git
+error: pathspec 'loop' did not match any file(s) known to git
+error: pathspec 'for' did not match any file(s) known to git
+error: pathspec 'reading”' did not match any file(s) known to git
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Fix wrong loop for reading"
+On branch bug1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+mb5151:SI_2023_lab1_121232 mstojkov$ nano SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Fix wrong loop for reading"
+On branch bug1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+mb5151:SI_2023_lab1_121232 mstojkov$ git add 
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+mb5151:SI_2023_lab1_121232 mstojkov$ git add .
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Fix wrong loop for reading"
+[bug1 3a5d1a9] Fix wrong loop for reading
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout bug2
+Switched to branch 'bug2'
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Fix wrong condition in filterOddNumbers"
+On branch bug2
+nothing to commit, working tree clean
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout bug2
+Already on 'bug2'
+mb5151:SI_2023_lab1_121232 mstojkov$ nano SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ nano SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout bug2
+Already on 'bug2'
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Fix wrong condition in filterOddNumbers"
+On branch bug2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+mb5151:SI_2023_lab1_121232 mstojkov$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+mb5151:SI_2023_lab1_121232 mstojkov$ git add .
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 c0441e4] Fix wrong condition in filterOddNumbers
+ 1 file changed, 37 insertions(+)
+ create mode 100644 SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout bug3
+Switched to branch 'bug3'
+mb5151:SI_2023_lab1_121232 mstojkov$ nano SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ nano SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Fix method sumEvenNumbers"
+On branch bug3
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+mb5151:SI_2023_lab1_121232 mstojkov$ git add .
+mb5151:SI_2023_lab1_121232 mstojkov$ git commit -m "Fix method sumEvenNumbers"
+[bug3 6682476] Fix method sumEvenNumbers
+ 1 file changed, 37 insertions(+)
+ create mode 100644 SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git push --all origin
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.08 KiB | 1.08 MiB/s, done.
+Total 9 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/SI121232/SI_2023_lab1_121232.git
+ * [new branch]      bug1 -> bug1
+ * [new branch]      bug2 -> bug2
+ * [new branch]      bug3 -> bug3
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+mb5151:SI_2023_lab1_121232 mstojkov$ git fetch origin
+mb5151:SI_2023_lab1_121232 mstojkov$ git checkout -b bug1 origin/bug1
+fatal: a branch named 'bug1' already exists
+mb5151:SI_2023_lab1_121232 mstojkov$ git merge master
+Already up to date.
+mb5151:SI_2023_lab1_121232 mstojkov$ merge bug1
+-bash: merge: command not found
+mb5151:SI_2023_lab1_121232 mstojkov$ git merge bug1
+Updating 8d3aec9..3a5d1a9
+Fast-forward
+ SILab1.java | 41 +++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+mb5151:SI_2023_lab1_121232 mstojkov$ git push --all origin
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SI121232/SI_2023_lab1_121232.git
+   8d3aec9..3a5d1a9  master -> master
+mb5151:SI_2023_lab1_121232 mstojkov$ git merge bug2
+Auto-merging SILab1.java
+CONFLICT (add/add): Merge conflict in SILab1.java
+Automatic merge failed; fix conflicts and then commit the result.
+mb5151:SI_2023_lab1_121232 mstojkov$ git merge bug2
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.

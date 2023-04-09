@@ -1,0 +1,79 @@
+
+1.	DONE 
+My username is SI121232
+2.	DONE
+Previously it was the default branch repository named “main”, changed it to “master”
+3.	DONE
+Za logiranje kreirav soodveten token.
+4.	DONE 
+git clone https://github.com/SI121232/SI_2023_lab1_121232.git
+5.	DONE
+git remote add origin https://github.com/SI121232/SI_2023_lab1_121232.git
+6.	DONE 
+touch README.md
+nano README.md
+Margarita Stojkovska 121232
+git add .
+git commit -m "Initial commit"
+7.	DONE
+touch SILab1.java
+nano SILab1.java
+DODAVANJE NA KODOT
+git commit -m “Add java class”
+8.	DONE
+git push --all origin
+9.	DONE
+git checkout -b bug1
+git checkout -b bug2
+git checkout -b bug3
+10.	DONE
+git checkout bug1
+11.	DONE
+touch SILab1.java
+nano SILab1.java
+POPRAVANJE NA KODOT
+git add .
+git commit -m "Fix wrong loop for reading"
+12.	DONE
+git checkout bug2
+13.
+touch SILab1.java
+nano SILab1.java
+POPRAVANJE NA KODOT
+git add .
+git commit -m "Fix wrong condition in filterOddNumbers"
+14.	DONE
+git checkout bug3
+15.	DONE
+POPRAVANJE NA KODOT
+git add .
+git commit -m "Fix method sumEvenNumbers"
+16.	DONE
+git push --all origin
+17.	DONE
+git checkout master
+18.	DONE
+git merge bug1
+19.	DONE
+git push --all origin
+20.	DONE
+git merge bug2
+21.	DONE 
+git push --all origin
+22.	DONE
+git checkout bug3
+23.	DONE
+git rebase -- continue
+24.	DONE
+git checkout master
+25.	DONE
+git merge bug3
+26.	DONE
+git push --all origin
+27.	DONE
+touch logs.txt
+nano logs.txt
+
+touch 121232.txt
+nano 121232.txt
+
