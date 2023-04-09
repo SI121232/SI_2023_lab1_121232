@@ -1,8 +1,6 @@
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 public class SILab1 {
     public static List<Integer> filterOddNumbers(List<Integer> list) {
         List<Integer> result = new ArrayList<>();
@@ -15,10 +13,16 @@ public class SILab1 {
     }
 
     private static int sumEvenNumbers(List<Integer> list) {
+        int sum = 0;
+        for (Integer el : list) {
+            if (el % 2 == 0) {
+                sum += el;
+
         int sum = 1;
         for (Integer el : list) {
             if (el % 2 == 0) {
                 sum *= el;
+
             }
         }
         return sum;
@@ -30,6 +34,8 @@ public class SILab1 {
         int n = sc.nextInt();
 
         List<Integer> list = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
 
         for (int i = 0; i <n; i++) {
 
